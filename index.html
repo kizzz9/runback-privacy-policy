@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MoodVault のプライバシーポリシー。開発者は利用者のデータを収集しません。">
+<meta name="description" content="Runback のプライバシーポリシー。開発者は利用者のデータを収集しません。">
 <meta name="theme-color" content="#0C0B0F">
-<title>MoodVault — プライバシーポリシー</title>
+<title>Runback — プライバシーポリシー</title>
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <style>
@@ -170,22 +170,22 @@ footer a:hover { color: var(--label); }
 <div class="wrap">
 <header class="masthead">
   <div class="topbar">
-    <a class="brand" href="./"><img src="icon.png" alt="">MoodVault</a>
+    <a class="brand" href="./"><img src="icon.png" alt="">Runback</a>
     <nav class="lang"><a href="./en/" lang="en">English</a></nav>
   </div>
   <section class="hero">
     <div class="disc" aria-hidden="true"></div>
     <div class="hero-text">
       <p class="eyebrow">Privacy Policy</p>
-      <h1>あなたのセットは、<br>あなたの iPhone の中に。</h1>
-      <p>MoodVault は、利用者の情報を開発者のサーバーに集めません。広告もトラッキングもありません。このページでは、アプリがどの情報をどこで扱うかを説明します。</p>
+      <h1>あなたのセットは、<br>あなたの iPhone と iCloud に。</h1>
+      <p>Runback は、利用者の情報を開発者のサーバーに集めません。広告もトラッキングもありません。このページでは、アプリがどの情報をどこで扱うかを説明します。</p>
     </div>
   </section>
 </header>
 <main>
-  <div class="summary-cards"><div><b>集めない</b><span>アカウント登録なし。開発者のサーバーへ利用データを送りません。</span></div><div><b>追跡しない</b><span>広告・分析・トラッキングの仕組みを入れていません。</span></div><div><b>端末の中だけ</b><span>セットや履歴はこの iPhone の中に保存します。</span></div></div>
+  <div class="summary-cards"><div><b>集めない</b><span>アカウント登録なし。開発者のサーバーへ利用データを送りません。</span></div><div><b>追跡しない</b><span>広告・分析・トラッキングの仕組みを入れていません。</span></div><div><b>あなたの手元だけ</b><span>セットはこの iPhone と、あなた自身の iCloud に保存します。</span></div></div>
   <article class="notes">
-    <section><h2><span class="no">01</span>基本方針</h2><p>MoodVault（以下「本アプリ」）は、個人開発者（以下「開発者」）が提供する iPhone アプリです。本アプリは、利用者を識別する情報や利用状況を開発者が収集する仕組みを持ちません。広告、アクセス解析、クラッシュ収集などの外部サービスも組み込んでいません。</p></section>
+    <section><h2><span class="no">01</span>基本方針</h2><p>Runback（以下「本アプリ」）は、個人開発者（以下「開発者」）が提供する iPhone アプリです。本アプリは、利用者を識別する情報や利用状況を開発者が収集する仕組みを持ちません。広告、アクセス解析、クラッシュ収集などの外部サービスも組み込んでいません。</p></section>
     <section><h2><span class="no">02</span>この iPhone の中に保存する情報</h2><p>次の情報は、本アプリの中（App Group を含むこの端末の保存領域）にだけ保存され、開発者には送られません。</p>
 <table class="data">
 <tr><th>セット</th><td>名前・絵文字・曲の並び（Apple Music の曲 ID・曲名・アーティスト名・ジャケット画像の URL・ジャンル）・タグ・表紙の設定</td></tr>
@@ -195,27 +195,30 @@ footer a:hover { color: var(--label); }
 <tr><th>スマートミックス</th><td>条件・起点・前回使った曲の ID</td></tr>
 <tr><th>そのほか</th><td>編集中の下書き、表示の設定、ウィジェット用の一覧と縮小画像、再生の診断情報（直近の状態の変化）</td></tr>
 </table></section>
-    <section><h2><span class="no">03</span>Apple Music との連携</h2><p>本アプリは Apple の MusicKit を使い、利用者が許可した場合に限り、Apple Music の検索・再生、ライブラリやプレイリストの読み取り、利用者が選んだ曲のライブラリ・お気に入り・プレイリストへの追加を行います。これらの通信は Apple との間で行われ、Apple のプライバシーポリシーに従って扱われます。許可は iPhone の「設定」からいつでも取り消せます。</p></section>
-    <section><h2><span class="no">04</span>通信の相手</h2><p>本アプリが行う通信は次のとおりで、いずれも Apple のサービスです。開発者のサーバーとは通信しません。</p>
+    <section><h2><span class="no">03</span>iCloud による同期</h2><p>セット（名前・曲の並び・タグ・表紙・再生の記録）は、Apple の CloudKit を使って、利用者自身の iCloud のプライベートな領域に保存され、同じ Apple Account の端末どうしで同期します。この領域は利用者本人だけが使えるもので、開発者は中身を見ることができません。iPhone の「設定」→［あなたの名前］→「iCloud」で Runback をオフにすると、同期を止められます。聴いた時間帯の推定や下書きなど、上の表のそのほかの情報は同期しません。</p></section>
+    <section><h2><span class="no">04</span>Apple Music との連携</h2><p>本アプリは Apple の MusicKit を使い、利用者が許可した場合に限り、Apple Music の検索・再生、ライブラリやプレイリストの読み取り、利用者が選んだ曲のライブラリ・お気に入り・プレイリストへの追加を行います。これらの通信は Apple との間で行われ、Apple のプライバシーポリシーに従って扱われます。許可は iPhone の「設定」からいつでも取り消せます。</p></section>
+    <section><h2><span class="no">05</span>通信の相手</h2><p>本アプリが行う通信は次のとおりで、いずれも Apple のサービスです。開発者のサーバーとは通信しません。</p>
 <ul><li>Apple Music（MusicKit / Apple Music API）：検索・再生・ライブラリの操作・チャート・ジャンル一覧</li>
 <li>iTunes Search API（itunes.apple.com）：共有シートから曲を保存するとき、共有されたリンクの曲 ID から曲名などを取得</li>
-<li>Apple のジャケット画像配信：表紙やウィジェット用の画像の取得</li></ul></section>
-    <section><h2><span class="no">05</span>共有シート（共有機能）</h2><p>ミュージックなどの「共有」から本アプリを選ぶと、共有されたリンクから曲を特定し、選んだセットへ端末の中で保存します。リンクや曲の情報を開発者に送ることはありません。</p></section>
-    <section><h2><span class="no">06</span>写真と画像生成</h2><p>表紙に写真を使う場合、利用者がピッカーで選んだ 1 枚だけを読み込みます。写真ライブラリ全体へのアクセスは求めません。Image Playground による画像生成は Apple の仕組みで行われます。</p></section>
-    <section><h2><span class="no">07</span>バックアップファイル</h2><p>「バックアップと復元」で書き出したファイルは、利用者が選んだ保存先（ファイル App など）に保存されます。保存先や共有先は利用者が管理し、開発者が受け取ることはありません。</p></section>
-    <section><h2><span class="no">08</span>お問い合わせ</h2><p>サポートページのフォームから送信された内容（お名前・メールアドレス・本文。いずれも任意入力を含む）は、返信のためだけに使います。送信は Cloudflare Workers を経由し、Resend によって開発者のメールに転送されます。第三者への提供や、返信以外の目的での利用はしません。</p></section>
-    <section><h2><span class="no">09</span>第三者への提供</h2><p>開発者は利用者の情報を収集しないため、第三者に提供・販売することもありません。法令に基づく場合を除きます。</p></section>
-    <section><h2><span class="no">10</span>お子さまの利用</h2><p>本アプリは年齢を問わず利用できる内容で、お子さまの情報を収集することもありません。</p></section>
-    <section><h2><span class="no">11</span>データの削除</h2><p>セットやタグは本アプリの中で削除できます。履歴は設定 →「履歴とプライバシー」で消去できます。本アプリを削除すると、この端末に保存された情報はすべて消えます（書き出したバックアップファイルは残ります）。</p></section>
-    <section><h2><span class="no">12</span>このポリシーの変更</h2><p>内容を変更する場合は、このページを更新し、改定日を記載します。</p></section>
-    <section><h2><span class="no">13</span>お問い合わせ先</h2><p>このポリシーに関するご質問は、<a href="https://kizzz9.github.io/moodvault-support/#contact">サポートページのお問い合わせフォーム</a>からお送りください。</p></section>
+<li>Apple のジャケット画像配信：表紙やウィジェット用の画像の取得</li>
+<li>iCloud（CloudKit）：セットの同期（利用者自身のプライベートな領域）</li></ul></section>
+    <section><h2><span class="no">06</span>共有シート（共有機能）</h2><p>ミュージックなどの「共有」から本アプリを選ぶと、共有されたリンクから曲を特定し、選んだセットへ端末の中で保存します。リンクや曲の情報を開発者に送ることはありません。</p></section>
+    <section><h2><span class="no">07</span>写真と画像生成</h2><p>表紙に写真を使う場合、利用者がピッカーで選んだ 1 枚だけを読み込みます。写真ライブラリ全体へのアクセスは求めません。Image Playground による画像生成は Apple の仕組みで行われます。</p></section>
+    <section><h2><span class="no">08</span>セットの共有</h2><p>「セットを共有」を使うと、利用者が選んだ相手やアプリに、セットの名前・絵文字・曲の一覧・タグ・表紙の設定を含むファイルを送ります。写真の表紙と再生の記録は含めません。送り先は利用者が選び、開発者を経由しません。</p></section>
+    <section><h2><span class="no">09</span>バックアップファイル</h2><p>「バックアップと復元」で書き出したファイルは、利用者が選んだ保存先（ファイル App など）に保存されます。保存先や共有先は利用者が管理し、開発者が受け取ることはありません。</p></section>
+    <section><h2><span class="no">10</span>お問い合わせ</h2><p>サポートページのフォームから送信された内容（お名前・メールアドレス・本文。いずれも任意入力を含む）は、返信のためだけに使います。送信は Cloudflare Workers を経由し、Resend によって開発者のメールに転送されます。第三者への提供や、返信以外の目的での利用はしません。</p></section>
+    <section><h2><span class="no">11</span>第三者への提供</h2><p>開発者は利用者の情報を収集しないため、第三者に提供・販売することもありません。法令に基づく場合を除きます。</p></section>
+    <section><h2><span class="no">12</span>お子さまの利用</h2><p>本アプリは年齢を問わず利用できる内容で、お子さまの情報を収集することもありません。</p></section>
+    <section><h2><span class="no">13</span>データの削除</h2><p>セットやタグは本アプリの中で削除できます。履歴は設定 →「履歴とプライバシー」で消去できます。本アプリを削除すると、この端末に保存された情報は消えます。iCloud に同期したセットは残り、もう一度入れると戻ります。iCloud 上のデータも消したいときは、iPhone の「設定」→［あなたの名前］→「iCloud」→「アカウントのストレージを管理」から Runback のデータを削除してください（書き出したバックアップファイルは残ります）。</p></section>
+    <section><h2><span class="no">14</span>このポリシーの変更</h2><p>内容を変更する場合は、このページを更新し、改定日を記載します。</p></section>
+    <section><h2><span class="no">15</span>お問い合わせ先</h2><p>このポリシーに関するご質問は、<a href="https://kizzz9.github.io/runback-support/#contact">サポートページのお問い合わせフォーム</a>からお送りください。</p></section>
     <p class="meta">制定・最終更新：2026-11-08</p>
   </article>
 </main>
 <footer>
-  <span>© 2026 MoodVault</span>
-  <a href="https://kizzz9.github.io/moodvault-support/">サポート</a>
-  <a href="https://kizzz9.github.io/moodvault-support/#contact">お問い合わせ</a>
+  <span>© 2026 Runback</span>
+  <a href="https://kizzz9.github.io/runback-support/">サポート</a>
+  <a href="https://kizzz9.github.io/runback-support/#contact">お問い合わせ</a>
 </footer>
 </div>
 
