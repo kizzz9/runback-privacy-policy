@@ -202,10 +202,11 @@ footer a:hover { color: var(--label); }
 <ul><li>Apple Music (MusicKit / Apple Music API): search, playback, library actions, charts, genre list</li>
 <li>iTunes Search API (itunes.apple.com): when saving from the share sheet, to look up a song’s title and details from the shared link’s song ID</li>
 <li>Apple’s artwork delivery: images for covers and the widget</li>
+<li>Apple Music previews: 30-second previews while choosing songs</li>
 <li>iCloud (CloudKit): syncing sets (your own private database)</li></ul></section>
     <section><h2><span class="no">06</span>Share sheet</h2><p>When you choose the App from Share in Music or elsewhere, it identifies the song from the shared link and saves it to the set you pick, on your device. Links and song details are not sent to the Developer.</p></section>
     <section><h2><span class="no">07</span>Photos and image generation</h2><p>If you use a photo as a cover, only the one image you pick in the picker is read. The App doesn’t ask for access to your whole photo library. Image Playground generation is performed by Apple.</p></section>
-    <section><h2><span class="no">08</span>Sharing a set</h2><p>Share Set sends a file containing the set’s name, emoji, song list, tags, and cover settings to the people or apps you choose. Photo covers and play history aren’t included. You choose the destination; it doesn’t pass through the Developer.</p></section>
+    <section><h2><span class="no">08</span>Sharing a set</h2><p>Share Set creates a link containing the set’s name, emoji, color theme, and song list (song IDs, titles, artist names, and artwork URLs) and sends it to the people or apps you choose. Photo covers, tags, and play history aren’t included. The link points to a page on the Runback support site (GitHub Pages), but the set itself is placed after the “#” in the link, so browsers never send it to the server and the Developer never receives it. If Runback is installed on the recipient’s device, Runback opens and they can add the set. If not, the page shows the set on their device, loading artwork from Apple’s image delivery.</p></section>
     <section><h2><span class="no">09</span>Backup files</h2><p>Files exported with Backup & Restore are saved where you choose (such as the Files app). You control where they are stored and shared; the Developer never receives them.</p></section>
     <section><h2><span class="no">10</span>Contact form</h2><p>What you send through the support page’s form (name, email, and message; some fields optional) is used only to reply. It passes through Cloudflare Workers and is forwarded to the Developer’s email by Resend. It is not shared with third parties or used for any other purpose.</p></section>
     <section><h2><span class="no">11</span>Sharing with third parties</h2><p>Because the Developer doesn’t collect your information, it is not shared with or sold to third parties, except where required by law.</p></section>
@@ -213,7 +214,7 @@ footer a:hover { color: var(--label); }
     <section><h2><span class="no">13</span>Deleting data</h2><p>You can delete sets and tags in the App, and clear history in Settings → History & Privacy. Deleting the App removes what it stored on this device. Sets synced to iCloud remain and come back if you reinstall. To delete them from iCloud too, go to Settings → [your name] → iCloud → Manage Account Storage and delete Runback’s data (exported backup files remain).</p></section>
     <section><h2><span class="no">14</span>Changes to this policy</h2><p>If this policy changes, this page will be updated with the revision date.</p></section>
     <section><h2><span class="no">15</span>Contact</h2><p>For questions about this policy, use the <a href="https://kizzz9.github.io/runback-support/en/#contact">contact form on the support page</a>.</p></section>
-    <p class="meta">Effective / last updated: 2026-11-08</p>
+    <p class="meta">Effective: 2026-11-08 / Last updated: 2026-11-10</p>
   </article>
 </main>
 <footer>
